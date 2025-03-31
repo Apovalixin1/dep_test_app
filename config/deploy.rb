@@ -21,8 +21,7 @@ set :deploy_to, "/home/apovalixin/deploy_test_app"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, "config/credentials/production.key"
-append :linked_files, "config/credentials/production.yml.enc"
+append :linked_files, "config/credentials/production.key", "config/credentials/production.yml.enc", "config/database.yml"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "vendor", "storage"
@@ -42,3 +41,6 @@ append :linked_files, "config/credentials/production.yml.enc"
 set :use_sudo, true
 
 set :branch, 'main'
+
+# Отключаем миграции БД
+Rake::Task["deploy:migrate"].clear_actions
