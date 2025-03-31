@@ -2,7 +2,7 @@
 lock "~> 3.19.2"
 
 set :application, "deploy_test_app"
-set :repo_url, "git@github.com:Apovalixin1/deploy_test_app"
+set :repo_url, "https://github.com/Apovalixin1/dep_test_app"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
