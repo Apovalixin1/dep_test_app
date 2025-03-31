@@ -8,7 +8,7 @@ set :repo_url, "https://github.com/Apovalixin1/dep_test_app"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, "/home/apovalixin/deploy_test_app"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
