@@ -39,3 +39,5 @@ set :deploy_to, "/home/apovalixin/deploy_test_app"
 # set :ssh_options, verify_host_key: :secure
 
 set :use_sudo, true
+
+set :branch, 'main'
